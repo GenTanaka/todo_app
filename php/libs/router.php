@@ -3,7 +3,7 @@ namespace lib;
 
 function route($rpath,$method) {
 	if ($rpath === '') {
-		$rpath = 'login';
+		$rpath = 'view';
 	}
 	require_once SOURCE_BASE . "controllers/{$rpath}.php";
 	$fn = "\\controller\\{$rpath}\\{$method}";
